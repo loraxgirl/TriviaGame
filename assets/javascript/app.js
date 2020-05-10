@@ -1,16 +1,3 @@
-/* 
-GAME STRUCTURE:
-===============
-01. The game starts when the player hits the START button.
-02. Once the game starts the is a clock countdown.
-03. The time given is the total time to finish the whole game.
-04. The game ends if the time runs out, Game Over.
-05. The player can only guess one answer per question.
-06. Include the timer so the player can see it.
-07. All the questions are displayed at once.
-08. There is a DONE button at the end, if the user is finished before the timer stops.
-*/
-
 //IMPORTANT!
 $(document).ready(function(){
 
@@ -30,7 +17,7 @@ $(document).ready(function(){
 			correct: "Correct!",
 			incorrect: "That's not the right answer.",
 			endTime: "Looks like you ran out of time!",
-			finished: "So let's see how you did:"
+			finished: "Let's see how you did:"
 		};
 	
 		//All questions inside an array of objects
@@ -165,44 +152,65 @@ $(document).ready(function(){
 				answerList: ["Janet Leigh", "Judy Garland", "Kim Novak", "Debbie Reynolds"],
 				answer: 1,
 				image: "assets/images/astarisborn.jpg",
-				answerText: ""
+				answerText: "A film star helps a young singer and actress find fame, even as age and alcoholism send his own career on a downward spiral."
 				},
 
 			{	question: "In Bringing Up Baby, Cary Grant and Katherine Hepburn lose Baby and chase her around all night. Who is Baby?",
 				answerList: ["A dog", "A monkey", "A leopard", "Their niece"],
 				answer: 2,
 				image: "assets/images/bringingupbaby.jpg",
-				answerText: ""
+				answerText: "While trying to secure a $1 million donation for his museum, a befuddled paleontologist is pursued by a flighty and often irritating heiress and her pet leopard, Baby."
 				},
 
 			{	question: "This famous line: I have always depended on the kindness of strangers. is from which movie?",
 				answerList: ["A Streetcar Named Desire", "Top Hat", "An American in Paris", "The African Queen"],
 				answer: 0,
 				image: "assets/images/astreetcarnameddesire.jpg",
-				answerText: ""
+				answerText: "Disturbed Blanche DuBois moves in with her sister in New Orleans and is tormented by her brutish brother-in-law while her reality crumbles around her."
 				},	
+
+			{	question: "Ross Bagdasarian, the creator of Alvin and the Chipmunks, had a cameo in this Hitchcock film:",
+				answerList: ["To Catch A Thief", "Charade", "Rear Window", "Vertigo"],
+				answer: 2,
+				image: "assets/images/rearwindow.jpg",
+				answerText: "Ross Bagdasarian plays Jimmy Stewart's neighbor, the songwriter, in Rear Window."
+				},
+
+			{	question: "While shooting aerial footage over Greenland, a camera crew for this film accidentally filmed a secret US military base. Their plane was forced down, and the crew was suspected of being Soviet spies.",
+				answerList: ["Dr. Strangelove", "The Bourne Identity", "The Man Who Knew Too Much", "Charade"],
+				answer: 0,
+				image: "assets/images/drstrangelove.jpg",
+				answerText: "An insane general triggers a path to nuclear holocaust that a War Room full of politicians and generals frantically tries to stop."
+				},
+
+			{	question: "This film was inspired by a Pulitzer Prize winning expose written by reported Malcolm Johnson, and further inspired by the 1948 murder of a NY dock boss:",
+				answerList: ["The Day the Earth Stood Still", "On the Waterfront", "Anatomy of a Murder", "Kiss Me Deadly"],
+				answer: 1,
+				image: "assets/images/onthewaterfront.jpg",
+				answerText: "An ex-prize fighter turned longshoreman struggles to stand up to his corrupt union bosses."
+				},
 		];
 	
 	
 	// FUNCTIONS
 	// =========
 	
-		//This hides the game area on page load
+		//hides game area on page load
 		$("#gameCol").hide();
 		
-		//This captures user click on start button to create a new game
+		//captures user click on start button to create a new game
 		$("#startBtn").on("click", function(){
 			$(this).hide();
 			newGame();
 		});
 	
-		//This captures the user's click on the reset button to create a new game
+		//captures user's click on reset button to create a new game
 		$("#startOverBtn").on("click", function(){
 			$(this).hide();
 			newGame();
 		});
 	
-		//This function sets up the page for a new game emptying all areas and showing game area
+		//sets up page for a new game, emptying all areas & showing game area
 		function newGame(){
 			$("#gameCol").show();
 			$("#finalMessage").empty();
@@ -218,7 +226,7 @@ $(document).ready(function(){
 			newQuestion();
 		}
 	
-		//This function displays the next question
+		//displays next question
 		function newQuestion(){
 			$("#message").empty();
 			$("#correctedAnswer").empty();
@@ -226,11 +234,11 @@ $(document).ready(function(){
 			$("#gifCaption").hide();
 			answered = true;
 			
-			//This function displays the new question
+			//displays new question
 			$("#currentQuestion").html("Question " + (currentQuestion+1) + " of " + triviaQuestions.length);
 			$(".question").html(triviaQuestions[currentQuestion].question);
 	
-			//This function displays the new questions's answer options in multiple choice type
+			//displays new questions's answer options as multiple choice
 			for(var i = 0; i <= 5; i++){
 	
 				var choices = $("<div>");
@@ -240,10 +248,10 @@ $(document).ready(function(){
 				$(".answerList").append(choices);
 			}
 	
-			//This sets the timer
+			//sets the timer
 			countdown();
 	
-			//When user clicks on n answer this will pause the time and display the correct answer to the question 
+			//When user clicks an answer, pauses the time & displays correct answer to question 
 			$(".thisChoice").on("click",function(){
 					userSelect = $(this).data("index");
 					clearInterval(time);
@@ -251,16 +259,16 @@ $(document).ready(function(){
 				});
 			}
 	
-		//This function is for the timer countdown
+		//timer countdown
 		function countdown(){
 			seconds = 15;
 			$("#timeLeft").html("00:" + seconds);
 			answered = true;
-			//Sets a delay of one second before the timer starts
+			//Sets a delay of one second before timer starts
 			time = setInterval(showCountdown, 1000);
 		}
 	
-		//This function displays the countdown
+		//displays the countdown
 		function showCountdown(){
 			seconds--;
 	
@@ -277,7 +285,7 @@ $(document).ready(function(){
 			}
 		}
 	
-		//This function takes the user to the answer page after the user selects an answer or timer runs out
+		//takes user to the answer page after user selects an answer or timer runs out
 		function answerPage(){
 			$("#currentQuestion").empty();
 			$(".thisChoice").empty(); //Clears question page
@@ -288,22 +296,21 @@ $(document).ready(function(){
 			var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
 			var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
 	
-			//This adds the gif that corresponds to this quesiton
+			//adds the gif that goes with the question
 			var gifImageLink = triviaQuestions[currentQuestion].image;
 			var newGif = $("<img>");
 			newGif.attr("src", gifImageLink);
 			newGif.addClass("gifImg");
 			$("#gif").html(newGif);
 	
-			//STILL TO DO
-			//This adds a line of text below the gif that talks about why the answer is correct.
+			//adds text that describes movie or answer
 			var gifCaption = triviaQuestions[currentQuestion].answerText;
 				newCaption = $("<div>");
 				newCaption.html(gifCaption);
 				newCaption.addClass("gifCaption");
 				$("#gifCaption").html(newCaption);
 			
-			//This checks to see if user choice is correct, incorrect, or unanswered
+			//checks to see if user choice is correct, incorrect, or unanswered
 			if((userSelect == rightAnswerIndex) && (answered === true)){
 				correctAnswer++;
 				$('#message').html(messages.correct);
@@ -326,7 +333,7 @@ $(document).ready(function(){
 			}	
 		}
 	
-		//This fucntion displays all the game stats
+		//displays all the game stats at end of game
 		function scoreboard(){
 			$('#timeLeft').empty();
 			$('#message').empty();
@@ -343,7 +350,4 @@ $(document).ready(function(){
 			$('#startOverBtn').html("PLAY AGAIN");
 		}
 	
-	// MAIN PROCESS
-	//=============
-	
-	}); //IMPORTANT!
+	});
