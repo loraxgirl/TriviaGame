@@ -23,11 +23,41 @@ $(document).ready(function() {
 			correctAnswer: "Zither",
 			image: "<img src='assets/images/thethirdman.jpg'>"	}, 
 
+		{	question: "About which of his films did Sir Alfred Hitchcock say: Thirty-three percent of the effect of _________ was due to the music.",
+			choices: ["Psycho", "Rope", "North by Northwest", "Charade"],
+			correctAnswer: "Psycho",
+			image: "<img src='assets/images/psycho.jpg'>"		},
+
+		{	question: "Which movie had to reshoot an important scene due to lack of water pressure caused by people watering their lawns when they got home from work?",
+			choices: ["Rain Man", "Purple Rain", "April Rain", "Singin in the Rain"],
+			correctAnswer: "Singin in the Rain",
+			image: "<img src='assets/images/singinintherain.jpg'>"},
+				
+		{	question: "Fay Wray thought her director was talking about Cary Grant when he said, 'You'll have the tallest, darkest leading man in Hollywood.' But he really meant:?",
+			choices: ["Nosferatu", "Star Wars", "King Kong", "Werewolf in London"],
+			correctAnswer: "King Kong",
+			image: "<img src='assets/images/kingkong.jpg'>"		},
+				
+		{	question: "The crop duster scene in this movie inspired the helicopter chase in the Bond movie, From Russia With Love.",
+			choices: ["North by Northwest", "Rear Window", "Some Like It Hot", "Anatomy of a Murder"],
+			correctAnswer: "North by Northwest",
+			image: "<img src='assets/images/northbynorthwest.jpg'>"	},
+
 		{	question: "In the movie Casablanca, where does Rick hide the letters of transit?",
 			choices: ["Sam's Piano", "A Safe", "Behind the Bar", "Under the Roulette Wheel"],
 			correctAnswer: "Sam's Piano",
 			image: "<img src='assets/images/casablanca.jpg'>"	}, 
+		
+		{	question: "In which movie does Cary Grant smile when Jimmy Stewart hiccups drunkenly?",
+			choices: ["High Society", "Philadelphia Story", "Rebecca", "Rear Window"],
+			correctAnswer: "Philadelphia Story",
+			image: "<img src='assets/images/philadelphiastory.jpg'>"},
 				
+		{	question: "In which of his movies did Frank Capra make a cameo as a passenger on a bus, singing The Daring Young Man on the Flying Trapeze?",
+			choices: ["For the Love of Mike", "It's A Wonderful Life", "The Apartment", "It Happened One Night"],
+			correctAnswer: "It Happened One Night",
+			image: "<img src='assets/images/ithappenedonenight.jpg'>"},
+
 		{	question: "In what 1950 drama does Bette Davis say, “Fasten your seatbelts; it’s going to be a bumpy night”?",
 			choices: ["Roman Holiday", "Stagecoach", "All About Eve", "Sunset Boulevard"],
 			correctAnswer: "All About Eve",
