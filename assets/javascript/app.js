@@ -4,7 +4,7 @@ $(document).ready(function() {
     // track which question we are on
     var questionCounter = 0;
     // initial time of 15 seconds for each question
-    var time = 20;
+    var time = 15;
     // will keep tally of right guesses for end game
     var correctGuesses = 0;
     //will keep tally of wrong guesses for end game
@@ -13,26 +13,30 @@ $(document).ready(function() {
     // question & answer array
     var questions = [
     
-		{
-			question: "What are the famous dying words of Charles Foster Kane in the movie Citizen Kane?",
+		{	question: "What are the famous dying words of Charles Foster Kane in the movie Citizen Kane?",
 			choices: ["Goodbye", "I Love You", "Rosebud", "Vengeance"],
 			correctAnswer: "Rosebud",
-			image: "<img src='assets/images/citizenkane.jpg'>"
-			}, 
+			image: "<img src='assets/images/citizenkane.jpg'>"	}, 
 			
-			{
-			question: "The theme from The Third Man (also called “The Harry Lime Theme” was performed on what instrument?",
+		{	question: "The theme from The Third Man (also called “The Harry Lime Theme” was performed on what instrument?",
 			choices: ["Piano", "Zither", "Guitar", "Flute"],
 			correctAnswer: "Zither",
-			image: "<img src='assets/images/thethirdman.jpg'>"
-			}, 
+			image: "<img src='assets/images/thethirdman.jpg'>"	}, 
+
+		{	question: "In the movie Casablanca, where does Rick hide the letters of transit?",
+			choices: ["Sam's Piano", "A Safe", "Behind the Bar", "Under the Roulette Wheel"],
+			correctAnswer: "Sam's Piano",
+			image: "<img src='assets/images/casablanca.jpg'>"	}, 
+				
+		{	question: "In what 1950 drama does Bette Davis say, “Fasten your seatbelts; it’s going to be a bumpy night”?",
+			choices: ["Roman Holiday", "Stagecoach", "All About Eve", "Sunset Boulevard"],
+			correctAnswer: "All About Eve",
+			image: "<img src='assets/images/allabouteve.jpg'>"	},
 			
-			{
-			question: "The line 'Pay no attention to that man behind the curtain.' is from which movie?",
+		{	question: "The line 'Pay no attention to that man behind the curtain.' is from which movie?",
 			choices: ["Casablanca", "Singin in the Rain", "Frozen", "The Wizard of Oz"],
 			correctAnswer: "The Wizard of Oz",
-			image: "<img src='assets/images/thewizardofoz.jpg'>"
-			}
+			image: "<img src='assets/images/thewizardofoz.jpg'>"}
 		 ];
 	  
 
