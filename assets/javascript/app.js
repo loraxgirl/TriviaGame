@@ -32,6 +32,16 @@ $(document).ready(function() {
 			choices: ["Roman Holiday", "Stagecoach", "All About Eve", "Sunset Boulevard"],
 			correctAnswer: "All About Eve",
 			image: "<img src='assets/images/allabouteve.jpg'>"	},
+
+		{	question: "Which Hitchcock film, claimed as his favorite movie, is based on the true story of a serial killer?",
+			choices: ["Shadow of a Doubt", "North by Northwest", "Psycho", "Rebecca"],
+			correctAnswer: "Shadow of a Doubt",
+			image: "<img src='assets/images/shadowofadoubt.jpg'>"},
+				
+		{	question: "This movie was the first time a screenplay was specifically written for Ginger Rogers and Fred Astaire:",
+			choices: ["Swing Time", "Too Hot To Handle", "The Gay Divorcee", "Top Hat"],
+			correctAnswer: "Top Hat",
+			image: "<img src='assets/images/tophat.jpg'>"		},
 			
 		{	question: "The line 'Pay no attention to that man behind the curtain.' is from which movie?",
 			choices: ["Casablanca", "Singin in the Rain", "Frozen", "The Wizard of Oz"],
