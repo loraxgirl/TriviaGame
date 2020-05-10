@@ -14,8 +14,9 @@ body {
 .game-title {
   position:                 relative;
   margin:                   auto;
+  top:                      -18px;
   align-content:            center;
-  padding:                  5px;
+  padding:                  3px;
   width:                    80%;
   font-family:              'Courgette', cursive;
   font-size:                75px;
@@ -31,18 +32,15 @@ div {
 
 #container {
   position:                 relative;
-  top:                      -39px;
+  top:                      -44px;
   left:                      74px;
   width:                     86%;
-  height:                    396px;
+  height:                    380px;
   padding-top:              4px;
   padding-right:            14px;
   padding-left:             14px;
   margin-bottom:            30px;
   color:                    black;
-  border:                    7px ridge goldenrod;
-  border-radius:             14px;
-  box-shadow:                inset -1px -1px darkgoldenrod, 0px 1px rgb(126, 125, 124);
 }
 
 #gameRow {
@@ -91,6 +89,7 @@ div {
 
 .answerList {
     text-align: center;
+    margin-top: 60px;
     margin-right: 10px;
     margin-left: 10px;
     color: black;
@@ -136,16 +135,16 @@ div {
 }
 
 .reset {
-    background-color: #ffffac;
-    color: black;
+    background-color: lightslategray;
+    color: darkred;
     border: 1px solid #000000;
-    font-size: 200%;
+    font-size: 180%;
     letter-spacing: 2px;
     margin-left: 40px;
     margin-right: 40px;
     padding: 20px 20px;
     margin-top: 30px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .reset:hover {
