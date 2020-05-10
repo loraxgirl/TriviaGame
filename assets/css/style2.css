@@ -36,9 +36,12 @@ div {
 #container {
   position:            relative;
   top:                 -40px;
-  left:                 45px;
-  width:                90%;
+  left:                 80px;
+  width:                84%;
   height:               420px;
+  border:              7px ridge goldenrod;
+  border-radius:       14px;
+  box-shadow:          inset -1px -1px darkgoldenrod, 0px 1px rgb(126, 125, 124);
 }
 
 /* Game Section */
@@ -51,9 +54,7 @@ div {
   padding-right:       14px;
   padding-left:        14px;
   margin-bottom:       50px;
-  border:              7px ridge goldenrod;
-  border-radius:       14px;
-  box-shadow:          inset -1px -1px darkgoldenrod, 0px 1px rgb(126, 125, 124);
+  color:            black;
 }
 
 h1,
