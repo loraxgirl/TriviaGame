@@ -3,7 +3,7 @@
 
 This is the Week 05 Javascript 2 Trivia Game, Themed with Classic Movie Trivia
 
-Time spent: **12** hours spent in total
+Time spent: **16** hours spent in total (lots of that was deciding on a theme and compiling the trivia)
 
 The following **required** functionality is completed:
 
@@ -14,11 +14,11 @@ The following **required** functionality is completed:
 * [x] CSS styling
 * [x] Posted of github
 * [x] Live on github.io pages
-* [ ] Added to portfolio - still on the to-do list to be resolved ASAP
+* [x] Added to portfolio
 * [x] ReadMe file created
 
 ## Notes
 
-At the most recent version, when all the questions have been answered, the timer continues, then tries to restart the game, flashing through the answered questions.
+At the most recent version, when all the questions have been answered, the timer continues, then tries to restart the game, flashing through the answered questions. **RESOLVED**
 
-Still working to resolve this.
+
