@@ -29,21 +29,21 @@ $(document).ready(function(){
 				answerText: "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; 'Rosebud'."
 				},
 
-			{	question: "The theme from The Third Man (also called “The Harry Lime Theme” was performed on what instrument?",
+			{	question: "The theme from The Third Man (also called 'The Harry Lime Theme' was performed on what instrument?",
 				answerList: ["Piano", "Zither", "Guitar", "Flute"],
 				answer: 1,
 				image: "assets/images/thethirdman.jpg",
 				answerText: "Pulp novelist Holly Martins travels to shadowy, postwar Vienna, only to find himself investigating the mysterious death of an old friend, Harry Lime."
 				},
 
-			{	question: "About which of his films did Sir Alfred Hitchcock say: Thirty-three percent of the effect of _________ was due to the music.",
+			{	question: "About which of his films did Sir Alfred Hitchcock say: 33% of the effect of _________ was due to the music.",
 				answerList: ["Psycho", "Rope", "North by Northwest", "Charade"],
 				answer: 0,
 				image: "assets/images/psycho.jpg",
 				answerText: "A Phoenix secretary embezzles forty thousand dollars from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother."
 				},
 
-			{	question: "Which movie had to reshoot an important scene due to lack of water pressure caused by people watering their lawns when they got home from work?",
+			{	question: "Which movie had to re-shoot an important scene due to lack of water pressure caused by people watering their lawns when they got home from work?",
 				answerList: ["Rain Man", "Purple Rain", "April Rain", "Singin' in the Rain"],
 				answer: 3,
 				image: "assets/images/singinintherain.jpg",
@@ -71,7 +71,7 @@ $(document).ready(function(){
 				answerText: "A New York City advertising executive goes on the run after being mistaken for a government agent by a group of foreign spies."
 				},
 
-			{	question: "In which of his movies did Frank Capra make a cameo as a passenger on a bus, singing The Daring Young Man on the Flying Trapeze?",
+			{	question: "In which of his movies did Frank Capra make a cameo as a passenger on a bus, singing 'The Daring Young Man on the Flying Trapeze'?",
 				answerList: ["For the Love of Mike", "It's A Wonderful Life", "The Apartment", "It Happened One Night"],
 				answer: 3,
 				image: "assets/images/ithappenedonenight.jpg",
@@ -92,7 +92,7 @@ $(document).ready(function(){
 				answerText: "A screenwriter develops a dangerous relationship with a faded film star determined to make a triumphant return."
 				},
 
-			{	question: "In what 1950 drama does Bette Davis say, “Fasten your seatbelts; it’s going to be a bumpy night”?",
+			{	question: "In what 1950 drama does Bette Davis say, 'Fasten your seatbelts; it’s going to be a bumpy night'?",
 				answerList: ["Roman Holiday", "Stagecoach", "All About Eve", "Sunset Boulevard"],
 				answer: 2,
 				image: "assets/images/allabouteve.jpg",
@@ -113,7 +113,7 @@ $(document).ready(function(){
 				answerText: "An American dancer comes to Britain and falls for a model whom he initially annoyed, but she mistakes him for his goofy producer."
 				},
 
-			{	question: "After all, tomorrow is another day! is the 2nd famous quote from this movie:",
+			{	question: "'After all, tomorrow is another day!' is the 2nd famous quote from this movie:",
 				answerList: ["The Lady Vanishes", "Gone with the Wind", "To Catch A Thief", "The African Queen"],
 				answer: 1,
 				image: "assets/images/gonewiththewind.jpg",
@@ -148,7 +148,7 @@ $(document).ready(function(){
 				answerText: "A self-conscious woman juggles adjusting to her new role as an aristocrat's wife and avoiding being intimidated by his first wife's spectral presence."
 				},
 
-			{	question: "In A Star is Born, George Cukor pushed her so hard to get an emotional performance out of her, that she threw up before the first take.",
+			{	question: "In A Star is Born, George Cukor pushed the lead actress so hard to get an emotional performance out of her, that she threw up before the first take.",
 				answerList: ["Janet Leigh", "Judy Garland", "Kim Novak", "Debbie Reynolds"],
 				answer: 1,
 				image: "assets/images/astarisborn.jpg",
@@ -162,7 +162,7 @@ $(document).ready(function(){
 				answerText: "While trying to secure a $1 million donation for his museum, a befuddled paleontologist is pursued by a flighty and often irritating heiress and her pet leopard, Baby."
 				},
 
-			{	question: "This famous line: I have always depended on the kindness of strangers. is from which movie?",
+			{	question: "This famous line, 'I have always depended on the kindness of strangers.' is from which movie?",
 				answerList: ["A Streetcar Named Desire", "Top Hat", "An American in Paris", "The African Queen"],
 				answer: 0,
 				image: "assets/images/astreetcarnameddesire.jpg",
@@ -173,7 +173,7 @@ $(document).ready(function(){
 				answerList: ["To Catch A Thief", "Charade", "Rear Window", "Vertigo"],
 				answer: 2,
 				image: "assets/images/rearwindow.jpg",
-				answerText: "Ross Bagdasarian plays Jimmy Stewart's neighbor, the songwriter, in Rear Window."
+				answerText: "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder."
 				},
 
 			{	question: "While shooting aerial footage over Greenland, a camera crew for this film accidentally filmed a secret US military base. Their plane was forced down, and the crew was suspected of being Soviet spies.",
